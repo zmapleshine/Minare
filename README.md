@@ -1,5 +1,11 @@
 ## Minare
 
+
+[![Build Status](https://app.travis-ci.com/zmapleshine/Minare.svg?branch=main)](https://app.travis-ci.com/zmapleshine/Minare)
+![Language](https://img.shields.io/badge/language-JavaScript-orange.svg)
+![Language](https://img.shields.io/badge/license-MIT-green.svg)
+
+
  Minare is a lightweight HTTP request tool primarily used in the browser environment.
  In theory, Minare can be used as long as the terminal contains an XMLHttpRequest object.
  Minare makes XMLHttpRequest (XHR) somewhat easier to use.
