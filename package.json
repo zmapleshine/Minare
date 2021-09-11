@@ -1,0 +1,47 @@
+{
+  "name": "minare",
+  "version": "1.0.0",
+  "description": "A simple request tool, based on the XMLHttpRequest encapsulation.",
+  "main": "./minare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmapleshine/Minare.git"
+  },
+  "keywords": [
+    "request",
+    "tool",
+    "ajax",
+    "HttpRequest",
+    "post",
+    "XMLHttpRequest",
+    "http",
+    "https",
+    "layui"
+  ],
+  "files": [
+    "minare.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "zmapleshine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zmapleshine/Minare/issues"
+  },
+  "homepage": "https://github.com/zmapleshine/Minare#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.1"
+  }
+}

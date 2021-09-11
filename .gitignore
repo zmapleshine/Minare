@@ -1,0 +1,10 @@
+*.ipr
+*.iws
+*.log
+*.bak
+target/
+logs/
+.idea/
+*.iml
+node_modules/
+package-lock.json
