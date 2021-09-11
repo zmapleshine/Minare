@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var connect = require('gulp-connect');
 
-gulp.task('clean', () => {
+gulp.task('clean', function () {
     return gulp.src(['dist', 'index.js'], {read: false, allowEmpty: true})
         .pipe(clean());
 })
@@ -23,7 +23,7 @@ gulp.task('compress', function () {
         .pipe(uglify({
             mangle: true
         }))
-        .pipe(rename({suffix: ".min",basename: "minare"}))
+        .pipe(rename({suffix: ".min", basename: "minare"}))
         .pipe(gulp.dest('dist/'));
 });
 
