@@ -17,7 +17,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         var config = function config() {
             return {
-                url: "",
+                base_url: "",
                 handler: {
                     onComplete: null, onTimeout: null, onUploadProgress: null, statusHandlerMapping: {}
                 },
@@ -59,6 +59,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 globalConfig.handler.onUploadProgress = wrapEmptyIfNotFunction(handler);
                 return this;
             },
+            url: function url(baseURL) {
+                if (typeof baseURL === "function") {
+                    baseURL = baseURL();
+                } else if (typeof baseURL !== "string") {
+                    baseURL = "";
+                }
+                globalConfig.base_url = baseURL;
+                return this;
+            },
             timeout: function timeout(_timeout) {
                 globalConfig.timeout = typeof _timeout === "number" ? _timeout : 0;
                 return this;
@@ -74,7 +83,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         var minare = function minare(method, url, body) {
 
             var xhr = new XMLHttpRequest();
-            xhr.open(method, globalConfig.url + url);
+            xhr.open(method, globalConfig.base_url + url);
 
             var isJsonResponse = true;
             var _config = new config();
