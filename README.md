@@ -141,7 +141,7 @@ devMinare.config(function(configure){
 })
 ```
 
-## 0x03 API
+### 0x03 API
 
 
 - minare

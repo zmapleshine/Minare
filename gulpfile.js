@@ -28,11 +28,7 @@ gulp.task('compress', function () {
 });
 
 
-gulp.task('build', gulp.series(
-    'clean',
-    'release',
-    'compress',
-));
+gulp.task('build', gulp.series('clean', 'release', 'compress'));
 
 gulp.task("run", function () {
     connect.server({

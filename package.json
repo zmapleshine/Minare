@@ -1,8 +1,8 @@
 {
   "name": "minare",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A simple request tool, based on the XMLHttpRequest encapsulation.",
-  "main": "./minare.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,7 @@
     "layui"
   ],
   "files": [
-    "minare.js",
+    "index.js",
     "package.json",
     "README.md",
     "LICENSE"
