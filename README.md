@@ -34,10 +34,14 @@ var minare = require('minare');
 ```
 
 - Layui
+
+Users using layui can download a compressed version of Minare in 'dist' directory to the project's extension directory.
+For example, if your layui extension directory is 'myplugin_directory', you can use it like this:
 ```js
 layui.extend({
-  minare: '/myplugin_directory/minare'
+  minare: '/myplugin_directory/minare.min'
 })
+//...
 layui.use("minare",function() {
   var minare = layui.minare;
 })
