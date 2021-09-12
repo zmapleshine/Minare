@@ -46,6 +46,7 @@ layui.use("minare",function() {
   var minare = layui.minare;
 })
 ```
+For more information about layui's plugin extensions, please refer to the layui official documentation.
 
 
 ### 0x01 Configuration
