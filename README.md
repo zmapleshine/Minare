@@ -54,7 +54,7 @@ For more information about layui's plugin extensions, please refer to the layui 
 ```js
 
 //Global Config 
-mianre.config(function(configure){
+minare.config(function(configure){
     configure
       .url("http://127.0.0.1:6633/api")
       .whenUploadProgress(function (e) {
