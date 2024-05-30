@@ -119,6 +119,7 @@
                 },
                 onUploadProgress: function (f) {
                     _config.handler.onUploadProgress = getFunction(f, true);
+                    return this;
                 },
                 setHeader: function (key, value) {
                     xhr.setRequestHeader(key, value)
